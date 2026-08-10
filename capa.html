@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraná em Destaque - Capa</title>
+    <style>
+        :root {
+            --primary-color: #006633;
+            --secondary-color: #2e7d32;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #212529;
+            --muted-text: #6c757d;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #006633, #004d26);
+            color: #ffffff;
+            padding: 40px 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .cover-image {
+            margin-bottom: 25px;
+        }
+
+        .cover-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .footer {
+            padding: 20px;
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            border-top: 1px solid #e9ecef;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Paraná em Destaque</h1>
+            <p>Conhecendo Nosso Território e Suas Culturas</p>
+        </header>
+
+        <main class="content">
+            <div class="cover-image">
+                <img src="capa.jpg" alt="Capa do Jornal Paraná em Destaque" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div style="display:none; padding: 30px; background-color: #e8f5e9; border: 2px dashed #006633; border-radius: 8px;">
+                    <strong style="color: #006633;">🖼️ [ Imagem da Capa ]</strong><br>
+                    <span style="font-size: 0.85rem; color: #555;">Salve a imagem como: <code>capa.jpg</code></span>
+                </div>
+            </div>
+
+            <p style="font-size: 1.1rem; color: #555;">
+                Edição Especial: A história e as contribuições dos imigrantes que ajudaram a construir o estado do Paraná.
+            </p>
+
+            <div class="nav-buttons">
+                <a href="pagina2.html" class="btn">Página 2 ➔</a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Paraná em Destaque — Conhecendo Nosso Território</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
